@@ -1,0 +1,49 @@
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  text-align: center;
+}
+
+.anio {
+  margin: 20px 0;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.ramos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.ramo {
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: lightgray;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.3s;
+}
+
+.ramo:hover {
+  opacity: 0.8;
+}
+
+.ramo.bloqueado {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.ramo.habilitado {
+  background-color: #90dfff;
+}
+
+.ramo.aprobado {
+  background-color: #a8e6a1;
+  text-decoration: line-through;
+}
